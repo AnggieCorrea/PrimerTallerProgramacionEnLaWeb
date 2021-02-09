@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../Contacto/Contacto.css" >
+</head>
+
+<body>
+    <h1> Registrate..! </h1>
+    <form name="formulario">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required> <br>
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required> <br>
+
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad"> <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required> <br>
+        <br>
+        <fieldset>
+            <h3>Sexo</h3>
+            <label for="sexoF">Femenino</label>
+            <input type="radio" id="sexoF" name="femenino"><br>
+
+            <label for="sexoM">Masculino</label>
+            <input type="radio" id="sexoM" name="masculino"><br>
+        </fieldset>
+        
+        <fieldset>
+            <h3>Artículos de interes</h3>
+            <label for="Hogar">Hogar</label>
+            <input type="checkbox" id="hogar" name="hogar">  <br>
+
+            <label for="tecnologia">Tecnología</label>
+            <input type="checkbox" id="tecnologia" name="tecnologia">  <br>
+
+            <label for="Infantil">Infantil</label>
+            <input type="checkbox" id="infantil" name="infantil">  <br>
+        </fieldset>
+
+        <fieldset>
+            <h3>Seleccion</h3>
+            <label for="select1">Color</label>
+            <select name="select1" id="select1">
+                <option value="1">Verde</option>
+                <option value="2">Rojo</option>
+                <option value="3">Azul</option>
+                <option value="4">Morado</option>
+            </select>
+        </fieldset>
+
+    </form> <br>
+
+    <button onclick= "mostrarInfo()" id="boton">Obtener valor</button>
+    <script>
+        var boton = document.getElementById("boton");
+
+        function mostrarInfo()
+        {
+            var input1 = document.getElementById("nombre");
+            var valor1 = input1.value;
+            var input2 = document.getElementById("apellido");
+            var valor2 = input2.value;
+            var input3 = document.getElementById("edad");
+            var valor3 = input3.value;
+            var input4 = document.getElementById("email");
+            var valor4 = input4.value;
+            var input5 = document.getElementById("sexoF");
+            var valor5 = input5.value;
+            var input6 = document.getElementById("sexoM");
+            var valor6 = input6.value;
+
+            if(valor6 == "on")
+            {
+                alert("INFORMACION:\n Nombre: "+ valor1 +"\n Apellido: " +valor2 +"\n Edad: " +valor3 +"\n Email: " +valor4 +"\n Sexo femenino");
+            }
+            else{
+                alert("INFORMACION:\n Nombre: "+ valor1 +"\n Apellido: " +valor2 +"\n Edad: " +valor3 +"\n Email: " +valor4 +"\n Sexo masculino");
+            }
+            
+        }
+        
+    </script>
+    
+
+</body>
+
+</html>

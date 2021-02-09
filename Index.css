@@ -1,0 +1,42 @@
+body
+{
+    background-color:#8b62ad;
+}
+
+.SubBloqueInicial
+{
+    width: 250pt;
+    display: inline-block;
+}
+h1
+{
+    color: white;
+    text-align: center;
+}
+
+.logo
+{
+    width: 80px; 
+    height: 80px;
+    text-align: left;
+}
+
+a
+{
+    color: white;
+    text-align: center;
+    width: 80px; 
+}
+.barra
+{
+    width: 250pt;
+    display: inline-block;
+}
+h3
+{
+    color: black;
+}
+img
+{
+    opacity: 0.8;
+}

@@ -1,0 +1,48 @@
+body
+{
+    background-color: #8b62ad;
+}
+img{
+    width: 200px; 
+    height: 200px;
+}
+.producto{
+    width: 160pt;
+    display: inline-block;
+}
+
+.nombreProd{
+    width: 160pt;
+    display: inline-block;
+}
+h1
+{
+    color: white;
+    text-align: center;
+}
+h3
+{
+    color: white;
+    text-align: center;
+}
+p
+{
+    color: white;
+    text-align: center;
+}
+.prodHogar
+{
+    text-align: center;
+}
+.nombresProdHogar
+{
+    text-align: center;
+}
+.prodTecnolog
+{
+    text-align: center;
+}
+.nombresProdTecnolog
+{
+    text-align: center;
+}
